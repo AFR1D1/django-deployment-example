@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+    <h1>Welcome Home</h1>
+    <h2>go to /basic_app/relative or use this links:</h2>
+    <h2>{{ text }}</h2>
+    <h2>{{ text|upper }}</h2>
+    <h2>{{ text|cut:'hello' }}</h2>
+
+    <h2>{{ number }}</h2>
+    <h2>{{ number|add:"50" }}</h2>
+
+{% endblock %}
